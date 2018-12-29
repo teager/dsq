@@ -6,7 +6,7 @@
 	<version>2.2.10-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<!-- 编译参数 -->
+		<!-- 编译参数   -->
 		<jdk.version>1.8</jdk.version>
 		<encoding>UTF-8</encoding>
 		<plugin.compiler.version>3.5.1</plugin.compiler.version>
