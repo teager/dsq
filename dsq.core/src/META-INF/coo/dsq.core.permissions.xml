@@ -1,3 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <permissions>
+<!-- 示例模块 -->
+	<permission-group name="部门管理" order="1">
+		<permission id="11" name="部门管理" code="COMPANY_MANAGE" depends="" />
+		<permission id="12" name="职员管理" code="EMPLOYEE_MANAGE" depends="" />
+	</permission-group>
+	
+	<permission-group name="销售管理" order="2">
+		<permission id="21" name="销售管理_写" code="SALES_MANAGE_WRITE" depends="" />
+		<permission id="22" name="销售管理_读" code="SALES_MANAGE_READ" depends="" />
+		<permission id="23" name="仓库管理_写" code="MEDICINE_MANAGE_WRITE" depends="" />
+		<permission id="24" name="仓库管理_读" code="MEDICINE_MANAGE_READ" depends="" />
+	</permission-group>
 </permissions>

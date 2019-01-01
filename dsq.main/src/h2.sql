@@ -128,6 +128,50 @@ create table Employee
       references Company (id) on delete cascade on update restrict
 );
 
+/*==============================================================*/
+/* Table: Medicine                                              */
+/*==============================================================*/
+create table Medicine
+(
+   id                   char(36) not null,
+   number               varchar(20) not null,
+   name                 varchar(50) not null,
+   amount               int not null comment '库存数量',
+   specification        varchar(20) not null,
+   unit                 varchar(20) not null,
+   storeName            varchar(50) not null,
+   produceDate          datetime not null,
+   expireDate           datetime not null,
+   creatorId            char(36) not null,
+   createDate           datetime not null,
+   modifierId           char(36) not null,
+   modifyDate           datetime not null,
+   primary key (id)
+);
+
+/*==============================================================*/
+/* Table: SaleRecord                                              */
+/*==============================================================*/
+create table SaleRecord
+(
+   id                   char(36) not null,
+   number               varchar(20) not null,
+   --salesName            varchar(20) not null,
+   accountName          varchar(50) not null,
+   specification        varchar(20) not null,
+   unit                 varchar(20) not null,
+   amount               int not null comment '销售数量',
+   saleDate             datetime not null,
+   produceDate             datetime not null,
+   productName          varchar(20) not null,
+   manufacture          varchar(20) not null,
+   creatorId            char(36) not null,
+   createDate           datetime not null,
+   modifierId           char(36) not null,
+   modifyDate           datetime not null,
+   primary key (id)
+);
+
 -- 创建系统根机构
 insert into Organ (id, parentId, name, enabled, ordinal, creatorId, createDate, modifierId, modifyDate)
 values ('ADMINOID-0000-0000-0000-000000000000', null, '系统根机构', '1', 0, 'ADMINUID-0000-0000-0000-000000000000', NOW(), 'ADMINUID-0000-0000-0000-000000000000', NOW());

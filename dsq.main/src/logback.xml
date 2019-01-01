@@ -21,6 +21,7 @@
 	</appender>
 	<logger name="coo" level="INFO" />
 	<logger name="dsq" level="INFO" />
+	<logger name="org.springframework.web" level="DEBUG" />
 	<root level="WARN">
 		<appender-ref ref="console" />
 		<appender-ref ref="file" />

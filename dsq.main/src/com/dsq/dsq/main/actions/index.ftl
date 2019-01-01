@@ -44,14 +44,16 @@
                 <div id="navMenu">
                     <ul>
                         <@sec.any name="COMPANY_MANAGE,EMPLOYEE_MANAGE">
-                        	<li><@s.a href="/company/menu"><span class="fa-cubes">公司管理</span></@s.a></li>
+                        	<li><@s.a href="/company/menu"><span class="fa-cubes">销售管理</span></@s.a></li>
                         </@sec.any>
                         <@sec.any name="ADMIN">
 	                        <li><@s.a href="/system/menu"><span class="fa-sitemap">系统管理</span></@s.a></li>
                         </@sec.any>
+                        <#--
                         <@sec.any name="ADMIN">
 			                <li><@s.a href="/apitest/menu"><span class="fa-share-alt">接口测试</span></@s.a></li>
 			            </@sec.any>
+			            -->
                     </ul>
                 </div>
             </div>

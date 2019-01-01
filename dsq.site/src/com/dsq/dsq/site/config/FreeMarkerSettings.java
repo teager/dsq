@@ -17,5 +17,8 @@ public class FreeMarkerSettings extends AbstractFreeMarkerSettings {
     addTemplatePath("classpath:/com/dsq/dsq/site/actions/");
     addTemplatePath("classpath:/com/dsq/dsq/site/macros/");
     addAutoImport("sys", "sys.ftl");
+    addAutoImport("medicine", "medicine.ftl");
+    addAutoImport("saleRecord", "saleRecord.ftl");
+    addEnumPackage("com.dsq.dsq.core.enums");
   }
 }

@@ -1,4 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
+	<!-- 公司管理 -->
+	<entry key="company.name.exist">公司名称已存在。</entry>
+	<entry key="company.add.log">新增公司[{0}]。</entry>
+	<entry key="company.edit.log">编辑公司[{0}]。</entry>
+	<entry key="company.delete.log">删除公司[{0}]。</entry>
+	
+	<entry key="company.add.success">新增公司成功。</entry>
+	<entry key="company.edit.success">编辑公司成功。</entry>
+	<entry key="company.delete.success">删除公司成功。</entry>
+	<entry key="employee.add.success">新增职员成功。</entry>
+	<entry key="employee.edit.success">编辑职员成功。</entry>
+	<entry key="employee.delete.success">删除职员成功。</entry>
+	
+	<!-- 库存管理 -->
+	<entry key="medicine.number.exist">编号已存在。</entry>
+	<entry key="medicine.add.log">新增药品[{0}]。</entry>
+	<entry key="medicine.edit.log">编辑药品[{0}]。</entry>
+	<entry key="medicine.delete.log">删除药品[{0}]。</entry>
+	<entry key="medicine.add.success">新增药品成功。</entry>
+	<entry key="medicine.edit.success">编辑药品成功。</entry>
+	<entry key="medicine.delete.success">删除药品成功。</entry>
+	
+	<!-- 销售管理 -->
+	<entry key="saleRecord.number.exist">编号名称已存在。</entry>
+	<entry key="saleRecord.add.log">新增销售[{0}]。</entry>
+	<entry key="saleRecord.edit.log">编辑销售[{0}]。</entry>
+	<entry key="saleRecord.delete.log">删除销售[{0}]。</entry>
+	
+	<entry key="saleRecord.add.success">新增销售成功。</entry>
+	<entry key="saleRecord.edit.success">编辑销售成功。</entry>
+	<entry key="saleRecord.delete.success">删除销售品成功。</entry>
 </properties>

@@ -22,8 +22,14 @@
 		<junit.version>4.11</junit.version>
 		<servlet.version>3.0.1</servlet.version>
 		<coo.version>2.2.10-SNAPSHOT</coo.version>
+		<mysql.version>5.1.27</mysql.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>com.github.jnoee</groupId>
 			<artifactId>coo.core.support</artifactId>
