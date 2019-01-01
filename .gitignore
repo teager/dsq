@@ -1,0 +1,9 @@
+.settings
+.project
+.classpath
+.checkstyle
+/target
+/*/target
+*.md.html
+/pom.xml.releaseBackup
+/release.properties
