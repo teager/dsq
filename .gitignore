@@ -2,6 +2,8 @@
 .project
 .classpath
 .checkstyle
+*.iml
+*.iml
 /target
 /*/target
 *.md.html
