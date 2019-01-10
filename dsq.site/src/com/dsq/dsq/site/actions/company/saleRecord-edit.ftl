@@ -31,6 +31,14 @@
 	                <dt>销售日期：</dt>
 	                <dd><@s.input path="saleRecord.saleDate" class="required date" /></dd>
 	            </dl>
+	            <dl>
+	                <dt>生产日期：</dt>
+	                <dd><@s.input path="saleRecord.produceDate" class="required date" /></dd>
+	            </dl>
+	            <dl>
+	                <dt>商品批号：</dt>
+	                <dd><@s.input path="saleRecord.batchNumber" maxlength="60" class="required" /></dd>
+	            </dl>
 	            <dl class="nowrap">
 	                <dt>生产厂家：</dt>
 	                <dd><@s.input path="saleRecord.manufacture" maxlength="60" class="l-input" /></dd>

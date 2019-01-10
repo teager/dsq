@@ -99,7 +99,7 @@ public class MedicineService {
 		StringUtil.calcTime("produceDate", searchModel.getStartDate(),
 				searchModel.getEndDate(), criteria);
 		
-		criteria.addOrder(Order.desc(searchModel.getOrderBy()));
+		criteria.addOrder(Order.asc(searchModel.getOrderBy()));
 		int totalCount = medicineDao.count(criteria);
 		criteria.setFirstResult((searchModel.getPageNo() - 1)
 				* searchModel.getPageSize());

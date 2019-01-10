@@ -103,7 +103,7 @@ public class SaleRecordService {
 		StringUtil.calcTime("saleDate", searchModel.getStartDate(),
 				searchModel.getEndDate(), criteria);
 		
-		criteria.addOrder(Order.desc(searchModel.getOrderBy()));
+		criteria.addOrder(Order.asc(searchModel.getOrderBy()));
 		int totalCount = saleRecordDao.count(criteria);
 		criteria.setFirstResult((searchModel.getPageNo() - 1)
 				* searchModel.getPageSize());

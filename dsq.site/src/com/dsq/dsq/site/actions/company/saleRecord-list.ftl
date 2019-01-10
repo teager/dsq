@@ -23,6 +23,7 @@
                     <th width="120">销售数量</th>
                     <th width="100" align="center">销售日期</th>
                     <th width="100" align="center">生产日期</th>
+                    <th width="100" align="center">商品批号</th>
 					<th width="120">生产厂家</th>
 					<#-- <th width="60" align="center">状态</th> -->
 					<@sec.any name="SALES_MANAGE_WRITE">
@@ -41,6 +42,7 @@
 					<td>${saleRecord.amount}</td>
 					<td>${saleRecord.saleDate?date}</td>
 					<td>${saleRecord.produceDate?date}</td>
+					<td>${saleRecord.batchNumber}</td>
 					<td>${saleRecord.manufacture}</td>
 					<@sec.any name="SALES_MANAGE_WRITE">
                     <td>

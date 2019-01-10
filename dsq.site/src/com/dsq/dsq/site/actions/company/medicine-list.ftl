@@ -15,16 +15,16 @@
         <table class="table" width="100%" layoutH="75">
             <thead>
                 <tr>
-                	<th width="120">编号</th>
                     <th width="120">药品名称</th>
                     <th width="120">库存数量</th>
                     <th width="120">商品规格</th>
                     <th width="120">包装单位</th>
                     <th width="100" align="center">生产日期</th>
                     <th width="100" align="center">失效日期</th>
+                    <th width="120">批号</th>
 					<th width="120" align="center">仓库名称</th>
 					<#-- <th width="60" align="center">状态</th> -->
-					<@sec.any name="MEDICINE_MANAGE_READ">
+					<@sec.any name="MEDICINE_MANAGE_WRITE">
                     <th width="150">操作</th>
                     </@sec.any>
                 </tr>
@@ -32,13 +32,13 @@
             <tbody>
                 <#list medicinePages.contents as medicine>
                 <tr>
-                    <td>${medicine.number}</td>
                     <td>${medicine.name}</td>
                     <td>${medicine.amount}</td>
                     <td>${medicine.specification}</td>
                     <td>${medicine.unit}</td>
 					<td>${medicine.produceDate?date}</td>
 					<td>${medicine.expireDate?date}</td>
+					<td>${medicine.number}</td>
 					<td>${medicine.storeName}</td>
 					<@sec.any name="MEDICINE_MANAGE_WRITE">
                     <td>

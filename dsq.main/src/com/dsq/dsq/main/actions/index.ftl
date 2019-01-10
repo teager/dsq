@@ -15,11 +15,12 @@
         <div id="layout">
             <div id="header">
                 <div class="headerNav">
-                    <a class="logo" href="javascript:;">LOGO</a>
+                    <a class="logo" href="javascript:;" style="width:350px">黑龙江吉星医药有限公司</a>
                     <ul class="nav">
                         <li>
                             <a href="javascript:;">${currentUser.name}（${currentUser.defaultActor.fullName}）</a>
                         </li>
+                        <#-- 
                         <li id="switchEnvBox">
                             <a href="javascript:;" class="fa-users">切换职务</a>
                             <ul>
@@ -28,6 +29,7 @@
                                 </#list>
                             </ul>
                         </li>
+                         -->
                         <li><@dwz.a href="/system/person-pwd-change" target="dialog" width="SS" height="SSS" class="fa-gear">修改密码</@dwz.a></li>
                         <li><@s.a href="/logout" class="fa-power-off">退出</@s.a></li>
                     </ul>
@@ -61,7 +63,7 @@
             <@dwz.container />
         </div>
         <div id="footer">
-            &copy; <@s.message "app.name" />
+            &copy; <@s.message "app.name" />版权所有
         </div>
         <script type="text/javascript">
             $(function() {

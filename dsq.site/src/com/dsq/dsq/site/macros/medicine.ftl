@@ -1,5 +1,5 @@
 <#macro medicineSearch searchModel=searchModel>
-	<li>编号：</li><li><@s.input path="searchModel.number"/></li>
+	<li>批号：</li><li><@s.input path="searchModel.number"/></li>
 	<li>药品名称：</li><li><@s.input path="searchModel.name"/></li>
 	
 	<li>生产日期：</li>

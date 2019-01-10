@@ -37,7 +37,7 @@ public class SaleRecordAction {
 	public void list(Model model, SaleRecordSearchModel searchModel) {
 		searchModel.setOrderBy("createDate");
 		if (searchModel.getStartDate() == null && searchModel.getEndDate() == null) {
-			searchModel.setStartDate(DateUtils.getPrevDay(7));
+			searchModel.setStartDate(DateUtils.getPrevDay(30));
 			searchModel.setEndDate(DateUtils.getToday());
 		}
 		model.addAttribute("searchModel", searchModel);

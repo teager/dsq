@@ -44,6 +44,8 @@ public class SaleRecord extends ResourceEntity<User> {
 	@Temporal(TemporalType.DATE)
 	@LogField(text = "生产日期", format = DateUtils.DAY)
 	private Date produceDate;
+	/** 商品批号 */
+	private String batchNumber;
 	/** 生产厂家 */
 	private String manufacture;
 
@@ -105,6 +107,14 @@ public class SaleRecord extends ResourceEntity<User> {
 
 	public String getProductName() {
 		return productName;
+	}
+
+	public String getBatchNumber() {
+		return batchNumber;
+	}
+
+	public void setBatchNumber(String batchNumber) {
+		this.batchNumber = batchNumber;
 	}
 
 	public void setProductName(String productName) {
