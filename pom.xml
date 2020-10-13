@@ -20,7 +20,7 @@
 		<!-- 公共包 -->
 		<logback.version>1.1.2</logback.version>
 		<slf4j.version>1.7.5</slf4j.version>
-		<junit.version>4.11</junit.version>
+		<junit.version>4.13.1</junit.version>
 		<servlet.version>3.0.1</servlet.version>
 		<coo.version>2.2.10-SNAPSHOT</coo.version>
 		<mysql.version>5.1.27</mysql.version>
