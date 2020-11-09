@@ -16,7 +16,7 @@
 	-->
 	<entry key="db.url">jdbc:mysql://127.0.0.1:3306/dsq?generateSimpleParameterMetadata=true</entry>
 	<entry key="db.username">root</entry>
-	<entry key="db.password">TV.xian</entry>
+	<entry key="db.password">root</entry>
 	<entry key="db.maxActive">100</entry>
 	<entry key="db.minIdle">10</entry>
 	<entry key="db.initialSize">10</entry>

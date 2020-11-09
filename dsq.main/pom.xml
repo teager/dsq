@@ -13,6 +13,11 @@
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.27</version>
+		</dependency>
+		<dependency>
 			<groupId>com.dsq</groupId>
 			<artifactId>dsq.site</artifactId>
 			<version>${project.parent.version}</version>
@@ -56,6 +61,7 @@
 				<configuration>
 					<!--<scanIntervalSeconds>10</scanIntervalSeconds>-->
 					<contextPath>/</contextPath>
+					<webAppSourceDirectory>${basedir}/webapp</webAppSourceDirectory>
 					<!--<defaultsDescriptor>src/main/webapp/WEB-INF/web.xml</defaultsDescriptor>-->
 					<webApp>${basedir}/target/dsq.main-2.2.10-SNAPSHOT</webApp>
 					<connectors>
