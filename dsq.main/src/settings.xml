@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
+
+	<!-- 文件访问路径 -->
+	<entry key="content.server.url">http://127.0.0.1:8080/upload/contents/</entry>
+	<!-- 文件存放路径 -->
+	<entry key="content.path">D:/source/content/uploads/</entry>
+
 	<!-- 数据库设置 -->
 	<!--  
 	<entry key="db.url">jdbc:h2:mem:coo</entry>

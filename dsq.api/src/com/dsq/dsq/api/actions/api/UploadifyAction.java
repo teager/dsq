@@ -22,7 +22,7 @@ import coo.base.util.DateUtils;
  * 上传图片管理。
  */
 @Controller
-@RequestMapping("/fileManager")
+@RequestMapping("/api/file")
 public class UploadifyAction {
 	@Resource
 	private AttachmentService attachmentService;
@@ -31,6 +31,13 @@ public class UploadifyAction {
 	@Value(value = "${content.server.url}")
 	private String url;
 
+	@RequestMapping(value = "get", method = RequestMethod.GET)
+	@ResponseBody
+	public String upload(){
+
+		return "{'path':'" + url + "/" + "','id':'"
+				+ 1000 + "'}";
+	}
 	/**
 	 * 上传图片。
 	 * 
